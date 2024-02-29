@@ -1,5 +1,5 @@
 {
-  "name": "@Dheryldz/add-watermork",
+  "name": "@Dheryldz/add_watermork",
   "version": "1.0.2",
   "description": "simple add wm using FFmpeg",
   "main": "index.js",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
 	  "type": "git",
-	  "url": "https://github.com/Dheryldz/add-watermork"
+	  "url": "https://github.com/Dheryldz/add_watermork"
   },
   "dependencies": {
     "ffmpeg": "^0.0.4",
