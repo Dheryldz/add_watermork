@@ -1,13 +1,13 @@
 {
-  "name": "@pakforlay/add-watermark",
+  "name": "@Dheryldz/add-watermork",
   "version": "1.0.2",
   "description": "simple add wm using FFmpeg",
   "main": "index.js",
-  "author": "PakForlay",
+  "author": "Dheryldz",
   "license": "MIT",
   "repository": {
 	  "type": "git",
-	  "url": "https://github.com/pakforlay/add-watermark"
+	  "url": "https://github.com/pakforlay/add-watermork"
   },
   "dependencies": {
     "ffmpeg": "^0.0.4",
