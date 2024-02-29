@@ -4,7 +4,7 @@
 Clone this project
 
 ```bash
-> git clone https://github.com/pakforlay/whatsapp-botz.git
+> git clone https://github.com/Dheryldz/add_watermork
 > cd add-watermark
 > npm i
 ```
@@ -16,4 +16,4 @@ Clone this project
 > node mass-add.js [If You want mass add watermark for more videos]
 [For mass add wm videos you must write dir input and output videos]
 ```
-![image](https://github.com/pakforlay/add-watermark/assets/60418550/a6742e9d-ff76-4b15-8389-4aea526c51c4)
+
