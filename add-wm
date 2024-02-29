@@ -1,0 +1,33 @@
+var ffmpeg = require('ffmpeg');
+// This code by https://gist.github.com/suissa
+try {
+  var process = new ffmpeg('7246712539050970374.mp4'); // nama file video
+  process.then(function (video) {
+    console.log('Memproses penambahan Watermark pada Video');
+    var watermarkPath = 'wm-white.png', // ganti dengan nama file watermark
+      newFilepath = './video-com-watermark.mp4',
+      settings = {
+          position        : "C"      // Position: NE NC NW SE SC SW C CE CW
+        , margin_nord     : null      // Margin nord
+        , margin_sud      : null      // Margin sud
+        , margin_east     : null      // Margin east
+        , margin_west     : null      // Margin west
+      };
+    var callback = function (error, files) {
+      if(error){
+        console.log('ERROR: ', error);
+      }
+      else{
+        console.log('Sukses Menambahkan Watermark', files);
+      }
+    }
+    //add watermark
+    video.fnAddWatermark(watermarkPath, newFilepath, settings, callback)
+
+  }, function (err) {
+    console.log('Error: ' + err);
+  });
+} catch (e) {
+  console.log(e.code);
+  console.log(e.msg);
+}
